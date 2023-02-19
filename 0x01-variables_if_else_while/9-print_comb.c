@@ -1,22 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <unistd.h>
 
 /**
- * main - prints all combination of single digits
+ * main - Entry point
+ * Description: prints numbers
  * Reward: Always 0 (Success)
  */
 
 int main(void)
-
 {
 
-	int n;
+	int i;
 
-	for (n = '48'; n < '58'; n++)
+	for (i = '0'; i <= '9'; i++)
 	{
-	putchar(n);
-	if (n != '57')
+	putchar(i);
+	if (i != '9')
 	{
 	putchar(',');
 	putchar(' ');
